@@ -4,21 +4,26 @@
 <head>
     <meta charset='utf-8'>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
     <title>Javascript Quiz</title>
 </head>
 <body>
     <h1>Javascript Quiz</h1>
-    <div class="quiz-container">
-        <div id="quiz"></div>
+    <div id="quiz-container" hidden>
+        <div><span>time: &nbsp;</span><span id="timer"></span></div>
+        <div id="question">Inside which HTML element do we put the JavaScript?</div>
+        <button id="choice-a">a: &lt;js&gt;</button>
+        <br>
+        <button id="choice-b">b: &lt;scripting&gt;</button>
+        <br>
+        <button id="choice-c">c: &lt;script&gt;</button>
+        <br>
+        <button id="choice-d">d: &lt;javascript&gt;</button>
     </div>
     <button id="start">Start</button>
-    <button id="previous">Previous</button>
-    <button id="next">Next</button>
-    <button id="submit">Submit</button>
-    <div id="results"></div>
+    <div id="results" hidden></div>
  
 </body>
 </html>
