@@ -50,7 +50,7 @@ function nextQuestion(jsQuestions) {
     choiceC[0].appendChild(document.createTextNode(question.choices.c));
    
     choiceD.off("click").click(function() {
-        if(question.answer==="a") {
+        if(question.answer==="c") {
             correctCount++;
         }
         nextQuestion(jsQuestions);
@@ -77,7 +77,7 @@ function startQuiz(jsQuestions) {
     var correctCount = 0;
     var questionIndex = -1;
     $("#quiz-container")[0].hidden=undefined;
-    const time = 10;
+    const time = 60;
     var timer = setTimeout(function() {
         endQuiz();
     }, time*1000);
@@ -98,10 +98,10 @@ $(document).ready(function(){
         {
             question: "When a user views a page containing a JavaScript program, which machine actually executes the script?",
             choices: {
-                a: "The User's machine running a Web browser",
-                b: "The Web server",
-                c: "A central machine deep within Netscape's corporate offices",
-                d: "None of the above"
+                a: "a: The User's machine running a Web browser",
+                b: "b: The Web server",
+                c: "c: A central machine deep within Netscape's corporate offices",
+                d: "d: None of the above"
             },
             answer: "a"
         },
@@ -109,10 +109,10 @@ $(document).ready(function(){
         {
             question: "What are variables used for in JavaScript Programs?",
             choices: {
-                a: "Storing numbers, dates, or other values",
-                b: "Varying randomly",
-                c: "Causing high-school algebra flashbacks",
-                d: "None of the above"
+                a: "a: Storing numbers, dates, or other values",
+                b: "b: Varying randomly",
+                c: "c: Causing high-school algebra flashbacks",
+                d: "d: None of the above"
             },
             answer: "a"
         },
@@ -120,10 +120,10 @@ $(document).ready(function(){
         {
             question: "_____ JavaScript statements embedded in an HTML page can respond to user events such as mouse-clicks, form input, and page navigation.",
             choices: {
-                a: "Client-side",
-                b: "Server-side",
-                c: "Local",
-                d: "Native"
+                a: "a: Client-side",
+                b: "b: Server-side",
+                c: "c: Local",
+                d: "d: Native"
             },
             answer: "a"
         },
@@ -131,10 +131,10 @@ $(document).ready(function(){
         {
             question: "What should appear at the very end of your JavaScript?",
             choices: {
-                a: "The </script>",
-                b: "The <script>",
-                c: "The END statement",
-                d: "None of the above"
+                a: "a: The </script>",
+                b: "b: The <script>",
+                c: "c: The END statement",
+                d: "d: None of the above"
             },
             answer: "a"
         },
@@ -142,10 +142,10 @@ $(document).ready(function(){
         {
             question: "Inside which HTML element do we put the JavaScript?",
             choices: {
-                a: "<js>",
-                b: "<scripting>",
-                c: "<script>",
-                d: "<javascript>"
+                a: "a: <js>",
+                b: "b: <scripting>",
+                c: "c: <script>",
+                d: "d: <javascript>"
             },
             answer: "c"
         },
